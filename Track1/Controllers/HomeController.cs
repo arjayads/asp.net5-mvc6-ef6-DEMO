@@ -11,34 +11,34 @@ namespace Track1.Controllers
     {
         public ActionResult Index()
         {
-            using (var c1 = new SchoolContext())
-            {
-                Student s1 = new Student() { Name = "Arjay" };
+            //using (var c1 = new SchoolContext())
+            //{
+            //    Student s1 = new Student() { Name = "Arjay" };
 
-                c1.Student.Add(s1);
-                c1.SaveChanges();
-            }
+            //    c1.Student.Add(s1);
+            //    c1.SaveChanges();
+            //}
 
-            using (var c2 = new SchoolContext())
-            {
-                Student s2 = c2.Student.Where(b => b.Name == "Arjay").FirstOrDefault();
+            //using (var c2 = new SchoolContext())
+            //{
+            //    Student s2 = c2.Student.Where(b => b.Name == "Arjay").FirstOrDefault();
 
-                if (object.ReferenceEquals(null, s2))
-                {
-                    System.Diagnostics.Debug.WriteLine("Not Found");
-                }
-                else
-                {
-                    System.Diagnostics.Debug.WriteLine("Student Found");
-                }
+            //    if (object.ReferenceEquals(null, s2))
+            //    {
+            //        System.Diagnostics.Debug.WriteLine("Not Found");
+            //    }
+            //    else
+            //    {
+            //        System.Diagnostics.Debug.WriteLine("Student Found");
+            //    }
 
-                System.Diagnostics.Debug.WriteLine("Loading view");
-            }
+            //    System.Diagnostics.Debug.WriteLine("Loading view");
+            //}
 
-            var ctx = new SchoolContext();
-            Student stud = ctx.Student.Where(b => b.Name == "Arjay").FirstOrDefault();
+            //var ctx = new SchoolContext();
+            //Student stud = ctx.Student.Where(b => b.Name == "Arjay").FirstOrDefault();
 
-            return View(stud);
+            return View();
         }   
 
         public ActionResult About()
