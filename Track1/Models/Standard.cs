@@ -6,6 +6,7 @@ using System.Web;
 
 namespace Track1.Models
 {
+    [Table("Standard")]
     public class Standard
     {
         public Standard()
