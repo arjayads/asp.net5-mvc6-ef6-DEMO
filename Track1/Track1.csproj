@@ -132,6 +132,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608061558402_InitialCreate.cs" />
+    <Compile Include="Migrations\201608061558402_InitialCreate.Designer.cs">
+      <DependentUpon>201608061558402_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608061600514_AddStudentAddress.cs" />
+    <Compile Include="Migrations\201608061600514_AddStudentAddress.Designer.cs">
+      <DependentUpon>201608061600514_AddStudentAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608061602023_CreateTableTeacher.cs" />
+    <Compile Include="Migrations\201608061602023_CreateTableTeacher.Designer.cs">
+      <DependentUpon>201608061602023_CreateTableTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SchoolContext.cs" />
     <Compile Include="Models\Seed\SchoolDBInitializer.cs" />
     <Compile Include="Models\Standard.cs" />
@@ -184,6 +197,17 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201608061558402_InitialCreate.resx">
+      <DependentUpon>201608061558402_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608061600514_AddStudentAddress.resx">
+      <DependentUpon>201608061600514_AddStudentAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608061602023_CreateTableTeacher.resx">
+      <DependentUpon>201608061602023_CreateTableTeacher.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
